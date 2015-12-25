@@ -55,6 +55,17 @@
 		944DC7631C2A93B700FE0C3B /* VideoTaxisTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DC7621C2A93B700FE0C3B /* VideoTaxisTabVC.swift */; };
 		944DC7651C2AA27C00FE0C3B /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DC7641C2AA27C00FE0C3B /* PlayVideoViewController.swift */; };
 		944DC7681C2AA3C500FE0C3B /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944DC7671C2AA3C500FE0C3B /* HttpController.swift */; };
+		944FB6391C2D3EAC008B98BE /* AboutView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FB6381C2D3EAC008B98BE /* AboutView.storyboard */; };
+		944FB63B1C2D3EB8008B98BE /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FB63A1C2D3EB8008B98BE /* Find.storyboard */; };
+		944FB63D1C2D3EC2008B98BE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FB63C1C2D3EC2008B98BE /* Home.storyboard */; };
+		944FB63F1C2D3ECE008B98BE /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FB63E1C2D3ECE008B98BE /* My.storyboard */; };
+		944FB6411C2D3ED9008B98BE /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FB6401C2D3ED9008B98BE /* Play.storyboard */; };
+		944FB6431C2D3EE8008B98BE /* SendVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FB6421C2D3EE8008B98BE /* SendVideo.storyboard */; };
+		944FB6481C2D3F55008B98BE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB6471C2D3F55008B98BE /* AboutViewController.swift */; };
+		944FB64A1C2D3F77008B98BE /* ExceptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB6491C2D3F77008B98BE /* ExceptionsViewController.swift */; };
+		944FB64C1C2D40D8008B98BE /* MyUserFavoriteTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB64B1C2D40D8008B98BE /* MyUserFavoriteTableVC.swift */; };
+		944FB64E1C2D4204008B98BE /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB64D1C2D4204008B98BE /* UIViewController-Extension.swift */; };
+		944FB6531C2D4417008B98BE /* DOAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB6521C2D4417008B98BE /* DOAlertController.swift */; };
 		945990681C291A1E007D2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945990671C291A1E007D2840 /* AppDelegate.swift */; };
 		9459906A1C291A1E007D2840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945990691C291A1E007D2840 /* ViewController.swift */; };
 		9459906D1C291A1E007D2840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9459906B1C291A1E007D2840 /* Main.storyboard */; };
@@ -137,6 +148,17 @@
 		944DC7621C2A93B700FE0C3B /* VideoTaxisTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTaxisTabVC.swift; sourceTree = "<group>"; };
 		944DC7641C2AA27C00FE0C3B /* PlayVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
 		944DC7671C2AA3C500FE0C3B /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
+		944FB6381C2D3EAC008B98BE /* AboutView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutView.storyboard; sourceTree = "<group>"; };
+		944FB63A1C2D3EB8008B98BE /* Find.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Find.storyboard; sourceTree = "<group>"; };
+		944FB63C1C2D3EC2008B98BE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		944FB63E1C2D3ECE008B98BE /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
+		944FB6401C2D3ED9008B98BE /* Play.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
+		944FB6421C2D3EE8008B98BE /* SendVideo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SendVideo.storyboard; sourceTree = "<group>"; };
+		944FB6471C2D3F55008B98BE /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		944FB6491C2D3F77008B98BE /* ExceptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExceptionsViewController.swift; sourceTree = "<group>"; };
+		944FB64B1C2D40D8008B98BE /* MyUserFavoriteTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUserFavoriteTableVC.swift; sourceTree = "<group>"; };
+		944FB64D1C2D4204008B98BE /* UIViewController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
+		944FB6521C2D4417008B98BE /* DOAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOAlertController.swift; sourceTree = "<group>"; };
 		945990641C291A1E007D2840 /* DS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		945990671C291A1E007D2840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945990691C291A1E007D2840 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				944DC6DD1C2A7C4200FE0C3B /* UIColor+Extension.swift */,
+				944FB64D1C2D4204008B98BE /* UIViewController-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -386,6 +409,9 @@
 		944DC75D1C2A934400FE0C3B /* My */ = {
 			isa = PBXGroup;
 			children = (
+				944FB6471C2D3F55008B98BE /* AboutViewController.swift */,
+				944FB6491C2D3F77008B98BE /* ExceptionsViewController.swift */,
+				944FB64B1C2D40D8008B98BE /* MyUserFavoriteTableVC.swift */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -427,6 +453,27 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
+		944FB6371C2D3E87008B98BE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				944FB6381C2D3EAC008B98BE /* AboutView.storyboard */,
+				944FB63A1C2D3EB8008B98BE /* Find.storyboard */,
+				944FB63C1C2D3EC2008B98BE /* Home.storyboard */,
+				944FB63E1C2D3ECE008B98BE /* My.storyboard */,
+				944FB6401C2D3ED9008B98BE /* Play.storyboard */,
+				944FB6421C2D3EE8008B98BE /* SendVideo.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		944FB64F1C2D43CC008B98BE /* SimpleButton */ = {
+			isa = PBXGroup;
+			children = (
+				944FB6521C2D4417008B98BE /* DOAlertController.swift */,
+			);
+			path = SimpleButton;
+			sourceTree = "<group>";
+		};
 		9459905B1C291A1D007D2840 = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +495,7 @@
 		945990661C291A1E007D2840 /* DS */ = {
 			isa = PBXGroup;
 			children = (
+				944FB6371C2D3E87008B98BE /* Storyboard */,
 				944DC7661C2AA3AB00FE0C3B /* NetWork */,
 				944DC7561C2A912900FE0C3B /* Controllers */,
 				944DC6DC1C2A7BE800FE0C3B /* Extension */,
@@ -475,6 +523,7 @@
 		9459907C1C292955007D2840 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				944FB64F1C2D43CC008B98BE /* SimpleButton */,
 				944DC72E1C2A881400FE0C3B /* Lib */,
 				9459907D1C29298F007D2840 /* Constants.swift */,
 				944DC7551C2A8AAE00FE0C3B /* DS_iOS-Bridging-Header.h */,
@@ -554,12 +603,18 @@
 				944DC7221C2A87F000FE0C3B /* UMShareEditViewController.xib in Resources */,
 				944DC71C1C2A87F000FE0C3B /* UMSocialLocalizable.strings in Resources */,
 				944DC7251C2A87F000FE0C3B /* UMSnsAccountViewController.xib in Resources */,
+				944FB6431C2D3EE8008B98BE /* SendVideo.storyboard in Resources */,
 				944DC72D1C2A87F100FE0C3B /* UMSocialSDKResourcesNew.bundle in Resources */,
 				944DC7181C2A87F000FE0C3B /* SMS_SDKLocalizable.strings in Resources */,
 				944DC7241C2A87F000FE0C3B /* UMSLoginViewController.xib in Resources */,
 				944DC7211C2A87F000FE0C3B /* UMSCommentInputControlleriPad.xib in Resources */,
 				9459906F1C291A1E007D2840 /* Assets.xcassets in Resources */,
+				944FB63D1C2D3EC2008B98BE /* Home.storyboard in Resources */,
 				9459906D1C291A1E007D2840 /* Main.storyboard in Resources */,
+				944FB6391C2D3EAC008B98BE /* AboutView.storyboard in Resources */,
+				944FB63F1C2D3ECE008B98BE /* My.storyboard in Resources */,
+				944FB6411C2D3ED9008B98BE /* Play.storyboard in Resources */,
+				944FB63B1C2D3EB8008B98BE /* Find.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,12 +673,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944FB64C1C2D40D8008B98BE /* MyUserFavoriteTableVC.swift in Sources */,
 				9459907B1C291A56007D2840 /* DataModel.swift in Sources */,
 				9459906A1C291A1E007D2840 /* ViewController.swift in Sources */,
+				944FB64A1C2D3F77008B98BE /* ExceptionsViewController.swift in Sources */,
+				944FB6481C2D3F55008B98BE /* AboutViewController.swift in Sources */,
 				948016111C2BF15500E4C801 /* ds_ios.xcdatamodeld in Sources */,
 				944DC7681C2AA3C500FE0C3B /* HttpController.swift in Sources */,
 				945990681C291A1E007D2840 /* AppDelegate.swift in Sources */,
+				944FB64E1C2D4204008B98BE /* UIViewController-Extension.swift in Sources */,
 				9459907E1C29298F007D2840 /* Constants.swift in Sources */,
+				944FB6531C2D4417008B98BE /* DOAlertController.swift in Sources */,
 				944DC7651C2AA27C00FE0C3B /* PlayVideoViewController.swift in Sources */,
 				944DC6DE1C2A7C4300FE0C3B /* UIColor+Extension.swift in Sources */,
 				944DC75B1C2A921F00FE0C3B /* MyUserFavoriteTabVC.swift in Sources */,

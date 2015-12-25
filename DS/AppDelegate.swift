@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             DataCenter.shareDataCenter.user = userInfo
             
         }
+        // 18631906778 
         
         
         
@@ -241,9 +242,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             try coordinator.addPersistentStoreWithType(NSSQLiteStoreType,configuration: nil,URL:url,options:nil)
             
-            
         }catch{
-            
             
             var dict = [String:AnyObject]()
             dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data"
@@ -256,10 +255,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return coordinator
     }()
     
+    
+    
+    lazy var managedObjectContext: NSManagedObjectContext = {
+        let coordinator = self.persistentStoreCoordinator
+        var managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+        managedObjectContext.persistentStoreCoordinator = coordinator
+        return managedObjectContext
+    }()
 
     
+    func saveContext() {
+        
+        if managedObjectContext.hasChanges{
+            do{
+                
+                try managedObjectContext.save()
+                
+            }catch{
+                
+                let nserror = error as NSError
+                NSLog("Unresolved error \(nserror),\(nserror.userInfo)")
+                
+                
+            }
+        }
+        
+    }
     
     
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        return UMSocialSnsService.handleOpenURL(url)
+    }
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        return UMSocialSnsService.handleOpenURL(url)
+    }
     
 
 
