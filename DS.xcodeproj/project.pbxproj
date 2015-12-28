@@ -69,6 +69,7 @@
 		944FB64C1C2D40D8008B98BE /* MyUserFavoriteTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB64B1C2D40D8008B98BE /* MyUserFavoriteTableVC.swift */; };
 		944FB64E1C2D4204008B98BE /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB64D1C2D4204008B98BE /* UIViewController-Extension.swift */; };
 		944FB6531C2D4417008B98BE /* DOAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB6521C2D4417008B98BE /* DOAlertController.swift */; };
+		9454C2611C313B080064F6FE /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9454C2601C313B080064F6FE /* CAPSPageMenu.swift */; };
 		945990681C291A1E007D2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945990671C291A1E007D2840 /* AppDelegate.swift */; };
 		9459906A1C291A1E007D2840 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945990691C291A1E007D2840 /* ViewController.swift */; };
 		9459906D1C291A1E007D2840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9459906B1C291A1E007D2840 /* Main.storyboard */; };
@@ -165,6 +166,7 @@
 		944FB64B1C2D40D8008B98BE /* MyUserFavoriteTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUserFavoriteTableVC.swift; sourceTree = "<group>"; };
 		944FB64D1C2D4204008B98BE /* UIViewController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
 		944FB6521C2D4417008B98BE /* DOAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOAlertController.swift; sourceTree = "<group>"; };
+		9454C2601C313B080064F6FE /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		945990641C291A1E007D2840 /* DS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		945990671C291A1E007D2840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945990691C291A1E007D2840 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -535,6 +537,7 @@
 				944FB64F1C2D43CC008B98BE /* SimpleButton */,
 				944DC72E1C2A881400FE0C3B /* Lib */,
 				9459907D1C29298F007D2840 /* Constants.swift */,
+				9454C2601C313B080064F6FE /* CAPSPageMenu.swift */,
 				944DC7551C2A8AAE00FE0C3B /* DS_iOS-Bridging-Header.h */,
 			);
 			path = Util;
@@ -689,6 +692,7 @@
 				944FB6481C2D3F55008B98BE /* AboutViewController.swift in Sources */,
 				948016111C2BF15500E4C801 /* ds_ios.xcdatamodeld in Sources */,
 				944DC7681C2AA3C500FE0C3B /* HttpController.swift in Sources */,
+				9454C2611C313B080064F6FE /* CAPSPageMenu.swift in Sources */,
 				945990681C291A1E007D2840 /* AppDelegate.swift in Sources */,
 				944FB64E1C2D4204008B98BE /* UIViewController-Extension.swift in Sources */,
 				9459907E1C29298F007D2840 /* Constants.swift in Sources */,
