@@ -418,7 +418,75 @@ class DOAlertController: UIViewController,UITextFieldDelegate,UIViewControllerTr
     }
     
     
-    func
+    func layoutView(){
+        
+        if(layoutFlg){
+            return
+        }
+        layoutFlg = true
+        
+        
+        
+        overlayView.backgroundColor = overlayColor
+        alertView.backgroundColor = alertViewBgColor
+        
+        
+        let hasTitle : Bool = title != nil && title != ""
+        let hasMessage : Bool = message != nil && message != ""
+        let hasTextField : Bool = textFields != nil && textFields?.count > 0
+        
+        var textAreaPositionY: CGFloat = alertViewPadding
+        if(!isAlert()){
+            textAreaPositionY += alertViewPadding
+        }
+        
+        
+        
+        if (hasTitle){
+            titleLabel.frame.size = CGSizeMake(innerContentWidth, 0.0)
+            titleLabel.numberOfLines = 0;
+            titleLabel.textAlignment = .Center
+            titleLabel.font = titleFont
+            titleLabel.textColor = titleTextColor
+            titleLabel.text = title
+            titleLabel.sizeToFit()
+            titleLabel.frame = CGRectMake(0, textAreaPositionY, innerContentWidth, titleLabel.frame.height);
+            textContainer.addSubview(titleLabel)
+            textAreaPositionY += titleLabel.frame.height + 5.0
+        }
+        
+        
+        
+        // MessageView
+        if (hasMessage) {
+            messageView.frame.size = CGSizeMake(innerContentWidth, 0.0)
+            messageView.numberOfLines = 0
+            messageView.textAlignment = .Center
+            messageView.font = messageFont
+            messageView.textColor = messageTextColor
+            messageView.text = message
+            messageView.sizeToFit()
+            messageView.frame = CGRectMake(0, textAreaPositionY, innerContentWidth, messageView.frame.height)
+            textContainer.addSubview(messageView)
+            textAreaPositionY += messageView.frame.height + 5.0
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
     
     
     
