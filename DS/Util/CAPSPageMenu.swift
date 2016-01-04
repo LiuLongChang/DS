@@ -239,19 +239,46 @@ public class CAPSPageMenu: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     
     
     
+    public override func shouldAutomaticallyForwardAppearanceMethods() -> Bool {
+        return true
+    }
+    
+    public override func shouldAutomaticallyForwardRotationMethods() -> Bool {
+        return true
+    }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    func setUpUserInterface(){
+        let viewsDictionary = ["menuScrollView":menuScrollView,"controllerScrollView":controllerScrollView]
+        
+        controllerScrollView.pagingEnabled = true
+        controllerScrollView.translatesAutoresizingMaskIntoConstraints = false
+        controllerScrollView.alwaysBounceHorizontal = enableHorizontalBounce
+        controllerScrollView.bounces = enableHorizontalBounce
+        controllerScrollView.frame = CGRectMake(0.0, menuHeight, self.view.frame.width, self.view.frame.height)
+        self.view.addSubview(controllerScrollView)
+        
+        
+        let controllerScrollView_constraint_H : Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|[controllerScrollView]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary)
+        let controllerScrollView_constraint_V : Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|[controllerScrollView]|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary)
+        
+        self.view.addConstraints(controllerScrollView_constraint_H)
+        self.view.addConstraints(controllerScrollView_constraint_V)
+        
+        //Set up menu scroll view
+        menuScrollView.translatesAutoresizingMaskIntoConstraints  = false
+        menuScrollView.frame = CGRectMake(0.0, 0.0, self.view.frame.width, menuHeight)
+        self.view.addSubview(menuScrollView)
+        
+        
+        
+        
+        let menuScrollView_constraint_H : Array = NSLayoutConstraint
+        
+        
+        
+        
+    }
     
     
     
