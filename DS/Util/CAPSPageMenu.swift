@@ -30,8 +30,25 @@ class MenuItemView: UIView {
         
         menuItemSeparator = UIView(frame: CGRectMake(menuItemWidth-(separatorWidth),floor(menuScrollViewHeight*((1.0-separatorPercentageHeight)/2)),separatorWidth,floor(menuScrollViewHeight * separatorPercentageHeight)))
         
+        menuItemSeparator?.backgroundColor = menuItemSeparatorColor
+        if separatorRoundEdges {
+            menuItemSeparator?.layer.cornerRadius = (menuItemSeparator?.frame.width)! / 2
+        }
+        
+        menuItemSeparator?.hidden = true
+        self.addSubview(menuItemSeparator!)
+        self.addSubview(titleLabel!)
+        
     }
     
+    
+    func setTitleText(text: NSString){
+        if titleLabel != nil {
+            titleLabel?.text = text as String
+            titleLabel?.numberOfLines = 0
+            titleLabel?.sizeToFit()
+        }
+    }
     
     
     
@@ -53,9 +70,18 @@ public enum CAPSPageMenuOption {
     case MenuMargin(CGFloat)
     case MenuHeight(CGFloat)
     case SelectedMenuItemLabelColor(UIColor)
-    case UnselectedMenu
-    
-    
+    case UnselectedMenuItemLabelColor(UIColor)
+    case UseMenuLikeSegmentedControl(Bool)
+    case MenuItemSeparatorRoundEdges(Bool)
+    case MenuItemFont(UIFont)
+    case MenuItemSeparatorPercentageHeight(CGFloat)
+    case MenuItemWidth(CGFloat)
+    case EnableHorizontalBounce(Bool)
+    case AddBottomMenuHairline(Bool)
+    case MenuItemWidthBasedOnTitleTextWidth(Bool)
+    case ScrollAnimationDurationOnMenuItemTap(Int)
+    case CenterMenuItems(Bool)
+    case HideTopMenuBar(Bool)
     
 }
 
@@ -68,6 +94,7 @@ public class CAPSPageMenu: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     
     let menuScrollView = UIScrollView()
     let controllerScrollView = UIScrollView()
+    var controllerArray : [UIViewController] = []
     var menuItems : [MenuItemView] = []
     var menuItemWidths : [CGFloat] = []
     
@@ -89,6 +116,8 @@ public class CAPSPageMenu: UIViewController,UIScrollViewDelegate,UIGestureRecogn
     public var selectionIndicatorColor : UIColor = UIColor.whiteColor()
     public var selectedMenuItemLabelColor : UIColor = UIColor.whiteColor()
     public var unselectedMenuItemLabelColor : UIColor = UIColor.blackColor()
+    public var scrollMenuBackgroundColor : UIColor = UIColor.blackColor()
+    
     public var viewBackgroundColor : UIColor = UIColor.whiteColor()
     public var bottomMenuHairlineColor : UIColor = UIColor.whiteColor()
     public var menuItemSeparatorColor : UIColor = UIColor.lightGrayColor()
@@ -135,15 +164,90 @@ public class CAPSPageMenu: UIViewController,UIScrollViewDelegate,UIGestureRecogn
         case Other
     }
     
+    public init(viewControllers: [UIViewController],frame: CGRect,options: [String : AnyObject]?){
+        super.init(nibName: nil,bundle: nil)
+        controllerArray = viewControllers
+        self.view.frame = frame
+    }
     
-//    
-//    public init(ViewController: [UIViewController],frame: CGRect,options: [String : AnyObject]?){
-//        super.init(nibName: nil,bundle: nil)
-//        controllerScrollView
-//        
-//        
-//    }
-//    
+    
+    public convenience init(viewControllers:[UIViewController],frame: CGRect,pageMenuOptions:[CAPSPageMenuOption]?){
+        self.init(viewControllers:viewControllers,frame:frame,options:nil)
+        if let options = pageMenuOptions {
+            
+            for option in options{
+                
+                switch (option){
+                case let .SelectionIndicatorHeight(value):
+                    selectionIndicatorHeight = value
+                case let .MenuItemSeparatorWidth(value):
+                    menuItemSeparatorWidth = value
+                case let .ScrollMenuBackgroundColor(value):
+                    scrollMenuBackgroundColor = value
+                case let .ViewBackgroundColor(value):
+                    viewBackgroundColor = value
+                case let .BottomMenuHairlineColor(value):
+                    bottomMenuHairlineColor = value
+                case let .SelectionIndicatorColor(value):
+                    selectionIndicatorColor = value
+                case let .MenuItemSeparatorColor(value):
+                    menuItemSeparatorColor = value
+                case let .MenuMargin(value):
+                    menuMargin = value
+                case let .MenuHeight(value):
+                    menuHeight = value
+                case let .SelectedMenuItemLabelColor(value):
+                    selectedMenuItemLabelColor = value
+                case let .UnselectedMenuItemLabelColor(value):
+                    unselectedMenuItemLabelColor = value
+                case let .UseMenuLikeSegmentedControl(value):
+                    useMenuLikeSegmentedControl = value
+                case let .MenuItemSeparatorRoundEdges(value):
+                    menuItemSeparatorRoundEdges = value
+                case let .MenuItemFont(value):
+                    menuItemFont = value
+                case let .MenuItemSeparatorPercentageHeight(value):
+                    menuItemSeparatorPercentageHeight = value
+                case let .MenuItemWidth(value):
+                    menuItemWidth = value
+                case let .EnableHorizontalBounce(value):
+                    enableHorizontalBounce = value
+                case let .AddBottomMenuHairline(value):
+                    addBottomMenuHairline = value
+                case let .MenuItemWidthBasedOnTitleTextWidth(value):
+                    menuItemWidthBasedOnTitleTextWidth = value
+                case let .ScrollAnimationDurationOnMenuItemTap(value):
+                    scrollAnimationDurationOnMenuItemTap = value
+                case let .CenterMenuItems(value):
+                    centerMenuItems = value
+                case let .HideTopMenuBar(value):
+                    hideTopMenuBar = value
+                }
+                
+            }
+            
+        }
+    }
+    
+    
+
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
